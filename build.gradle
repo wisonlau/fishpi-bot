@@ -1,0 +1,55 @@
+plugins {
+    id 'org.springframework.boot' version '2.5.1'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+    id 'idea'
+
+}
+
+group 'io.dannio'
+version '1.0.0'
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven{
+        url = 'https://s01.oss.sonatype.org/content/repositories/snapshots/'
+    }
+}
+
+
+dependencies {
+
+    implementation 'io.github.danniod.fish4j:fish4j-api:0.0.15-SNAPSHOT'
+    implementation 'io.github.danniod.fish4j:fish4j-impl:0.0.15-SNAPSHOT'
+
+    implementation 'net.bramp.ffmpeg:ffmpeg:0.6.2'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-jackson:2.9.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    runtimeOnly 'mysql:mysql-connector-java'
+
+    implementation 'org.yaml:snakeyaml:1.29'
+    implementation 'org.telegram:telegrambots-spring-boot-starter:5.6.0'
+    implementation 'org.telegram:telegrambotsextensions:5.5.0'
+    implementation 'org.springframework.boot:spring-boot-starter'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+}
+
+test {
+    useJUnitPlatform()
+}

@@ -1,0 +1,38 @@
+{
+  "update_id": 187378614,
+  "edited_message": {
+    "message_id": 277,
+    "from": {
+      "id": 501058955,
+      "first_name": "•",
+      "is_bot": false,
+      "username": "danniod",
+      "language_code": "en"
+    },
+    "date": 1647015764,
+    "chat": {
+      "id": 501058955,
+      "type": "private",
+      "first_name": "•",
+      "username": "danniod"
+    },
+    "text": "abc",
+    "edit_date": 1647016961,
+    "reply_markup": {
+      "inline_keyboard": [
+        [
+          {
+            "text": "😀 1",
+            "callback_data": "{\"id\":\"4b0f3861d61217d5f\",\"e\":\"😀\"}"
+          }
+        ]
+      ]
+    },
+    "via_bot": {
+      "id": 190601014,
+      "first_name": "LikeBot",
+      "is_bot": true,
+      "username": "like"
+    }
+  }
+}

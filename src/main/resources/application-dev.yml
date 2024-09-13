@@ -1,0 +1,31 @@
+webhook:
+  url: http://localhost:8080
+
+bot:
+  supergroup-id: -777480027
+
+app:
+  data:
+    telegram: ./data/telegram
+    fishpi: ./data/fishpi
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:mysql://192.168.8.125:3306/fishpi
+    username: ${MYSQL_USERNAME}
+    password: ${MYSQL_PASSWORD}
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 30
+
+
+logging:
+  level:
+    root: info
+    io.dannio.fishpi: trace
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS,Asia/Shanghai

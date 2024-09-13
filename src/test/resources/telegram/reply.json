@@ -1,0 +1,38 @@
+{
+  "update_id": 187378900,
+  "message": {
+    "message_id": 27105,
+    "from": {
+      "id": 501058955,
+      "first_name": "•",
+      "is_bot": false,
+      "username": "danniod",
+      "language_code": "en"
+    },
+    "date": 1648782266,
+    "chat": {
+      "id": -1001699722830,
+      "type": "supergroup",
+      "title": "fishpi 聊天室",
+      "username": "fishpi_cr"
+    },
+    "text": "test",
+    "reply_to_message": {
+      "message_id": 27082,
+      "from": {
+        "id": 5211063652,
+        "first_name": "🐠fish π",
+        "is_bot": true,
+        "username": "fish_pi_bot"
+      },
+      "date": 1648782016,
+      "t": {
+        "id": -1001699722830,
+        "type": "supergroup",
+        "title": "fishpi 聊天室",
+        "username": "fishpi_cr"
+      },
+      "text": "dannio:\n早"
+    }
+  }
+}

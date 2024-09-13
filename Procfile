@@ -1,0 +1,1 @@
+web: java -Dwebhook.port=$PORT $JAVA_OPTS -jar build/libs/fishpi-bot-1.0.0.jar --spring.profiles.active=prod

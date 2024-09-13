@@ -1,0 +1,23 @@
+webhook:
+  port: ${PORT:8080}
+
+bot:
+  username: fish_pi_bot
+  token: 5211063652:AAEhRVrSBXyaLnXG0BAEIbdnQW02mYNaeKA
+  path: fishpi
+
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-test-query: select 1 from dual
+      pool-name: hikariDataSourcePool
+      auto-commit: false

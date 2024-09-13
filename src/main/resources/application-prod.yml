@@ -1,0 +1,31 @@
+webhook:
+  url: https://fishpi-bot.herokuapp.com
+
+bot:
+  supergroup-name: fishpi_cr
+
+app:
+  data:
+    telegram: /app/data/telegram
+    fishpi: /app/data/fishpi
+
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://${JAWSDB_HOST}:${JAWSDB_PORT:3306}/${JAWSDB_NAMESPACE}
+    username: ${JAWSDB_USERNAME}
+    password: ${JAWSDB_PASSWORD}
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 30
+
+
+logging:
+  level:
+    root: info
+    io.dannio.fishpi: trace
+  pattern:
+    dateformat: yyyy-MM-dd HH:mm:ss.SSS,Asia/Shanghai
